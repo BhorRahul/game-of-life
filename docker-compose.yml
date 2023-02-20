@@ -1,0 +1,8 @@
+version: 3
+  services:
+    service:
+      image: 'tomcat:9.0.71'
+      ports:
+      - "8089:8080"
+      volumes:
+      - "/data/project/game-of-life/gameoflife-web/target:/usr/local/tomcat/webapps tomcat:9.0.71"
